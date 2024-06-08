@@ -11,7 +11,7 @@ dotenv.config();
 
 const neynarApiKey = process.env.NEYNAR_API_KEY || '';
 
-export const app = new Frog({
+const app = new Frog({
   assetsPath: '/',
   basePath: '/api',
 }).use(
