@@ -13,8 +13,6 @@ const app = new Frog({
   // hub: neynar({ apiKey: 'NEYNAR_FROG_FM' })
 })
 
-// Uncomment to use Edge Runtime
-// export const runtime = 'edge'
 
 app.frame('/', (c) => {
   const { buttonValue, inputText, status } = c
