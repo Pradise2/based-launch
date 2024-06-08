@@ -1,6 +1,8 @@
 import { getFrameMetadata } from 'frog/next'
 import type { Metadata } from 'next'
+import dotenv from 'dotenv';
 
+dotenv.config();
 
 import styles from './page.module.css'
 
