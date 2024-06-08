@@ -6,6 +6,7 @@ import { handle } from 'frog/next'
 import { serveStatic } from 'frog/serve-static'
 import { neynar } from 'frog/middlewares'
 import dotenv from 'dotenv';
+import 'dotenv/config';
 
 dotenv.config();
 
@@ -48,14 +49,14 @@ app.frame('/Join-Waitlist', (c) => {
       if (likes.some(like => like.fid === interactorFid) || recasts.some(recast => recast.fid === interactorFid)) {
         return c.res({
           action: '/Done',
-          image: "https://based-launch.vercel.app/Youhavejoined.jpg",
+          image: 'https://based-launch.vercel.app/Youhavejoined.jpg',
         });
       }
     }
 
     return c.res({
       action: '/Join-Waitlist',
-      image: "https://based-launch.vercel.app/Tryagain.jpg",
+      image: 'https://based-launch.vercel.app/Tryagain.jpg',
       intents: [
         <Button.Reset>Try-again</Button.Reset>,
         <Button.Link href="https://warpcast.com/based-launch">Follow /basedlaunch</Button.Link>,
@@ -66,7 +67,7 @@ app.frame('/Join-Waitlist', (c) => {
    
     return c.res({
       action: '/Join-Waitlist',
-      image: "https://based-launch.vercel.app/Tryagain.jpg",
+      image: 'https://based-launch.vercel.app/Tryagain.jpg',
       intents: [
         <Button.Reset>Try-again</Button.Reset>,
         <Button.Link href="https://warpcast.com/based-launch">Follow /basedlaunch</Button.Link>,
@@ -78,7 +79,7 @@ app.frame('/Join-Waitlist', (c) => {
 
 app.frame('/Done', (c) => {
   return c.res({
-    image: "http://localhost:3000/Youhavejoined.jpg",
+    image: "https://based-launch.vercel.app/Youhavejoined.jpg",
     intents: [
       <Button value="Share">Share</Button>,
     ],
