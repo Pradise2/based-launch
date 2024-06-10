@@ -67,7 +67,7 @@ app.frame('/Join-Waitlist', (c) => {
       action: '/Join-Waitlist',
       image: 'https://based-launch.vercel.app/Tryagain.jpg',
       intents: [
-        <Button.Reset>Try-again</Button.Reset>,
+        <Button.Reset>Try again</Button.Reset>,
         <Button.Link href="https://warpcast.com/based-launch">Follow /basedlaunch</Button.Link>,
         <Button.Link href="https://warpcast.com/~/channel/basedlaunch">Follow @based-launch</Button.Link>,
       ],
