@@ -55,12 +55,10 @@ app.frame('/Join-Waitlist', (c) => {
     }
 
     return c.res({
-      action: '/Join-Waitlist',
-      image: 'https://based-launch.vercel.app/Tryagain.jpg',
+      action: '/Done',
+      image: "https://based-launch.vercel.app/Youhavejoined.jpg",
       intents: [
-        <Button.Reset>Try-again</Button.Reset>,
-        <Button.Link href="https://warpcast.com/based-launch">Follow /basedlaunch</Button.Link>,
-        <Button.Link href="https://warpcast.com/~/channel/basedlaunch">Follow @based-launch</Button.Link>,
+        <Button value="Share">Share</Button>,
       ],
     });
   } else {
@@ -77,14 +75,6 @@ app.frame('/Join-Waitlist', (c) => {
   }
 });
 
-app.frame('/Done', (c) => {
-  return c.res({
-    image: "https://based-launch.vercel.app/Youhavejoined.jpg",
-    intents: [
-      <Button value="Share">Share</Button>,
-    ],
-  });
-});
 
 
 devtools(app, { serveStatic });
