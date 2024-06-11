@@ -11,7 +11,7 @@ import 'dotenv/config';
 dotenv.config();
 
 const neynarApiKey = process.env.NEYNAR_API_KEY || '';
-const warpcasthash = process.env.WARPCAST_HASH || '';
+
 
 const app = new Frog({
   assetsPath: '/',
