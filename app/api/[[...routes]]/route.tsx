@@ -47,7 +47,7 @@ app.frame('/Join-Waitlist', (c) => {
         action: '/Done',
         image: 'https://based-launch.vercel.app/Youhavejoined.jpg',
         intents: [
-          <Button.Link href='https://warpcast.com/~/compose?text=A%20based%20product%20deserves%20a%20based%20launch!!!%20We%27re%20crafting%20something%20extraordinary%20and%20want%20you%20to%20join%20the%20movement.%20https://warpcast.com/based-launch%20Spread%20the%20word%20and%20be%20part%20of%20the%20revolution!&embeds[]=https://based-launch.vercel.app/api/start/'>Share</Button.Link>,
+          <Button.Link href='https://warpcast.com/~/compose?text=A%20based%20product%20deserves%20a%20based%20launch!!!%20We%27re%20crafting%20something%20extraordinary%20and%20want%20you%20to%20join%20the%20movement.%20Follow:%20/based-launch%20Like%20%E2%9D%A4%EF%B8%8F%20Recast%20%F0%9F%94%84&embeds[]=https://based-launch.vercel.app/api/start/'>Share</Button.Link>,
         ],
       });
     }
