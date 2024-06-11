@@ -37,7 +37,7 @@ app.frame('/Join-Waitlist', (c) => {
   const interactor = c.var.interactor;
   const cast = c.var.cast;
 
-  if (cast && cast.hash === warpcasthash && cast.reactions) {
+  if (cast && cast.reactions) {
     const { likes, recasts } = cast.reactions;
     const interactorFid = interactor?.fid;
 
@@ -53,7 +53,6 @@ app.frame('/Join-Waitlist', (c) => {
     }
   }
 
-  console.log("Interactor does not meet the criteria.");
   return c.res({
     action: '/Join-Waitlist',
     image: 'https://based-launch.vercel.app/Tryagain.jpg',
