@@ -47,7 +47,7 @@ app.frame('/Join-Waitlist', (c) => {
         action: '/Done',
         image: 'https://based-launch.vercel.app/Youhavejoined.jpg',
         intents: [
-          <Button.Link href='https://based-launch.vercel.app/api/start'>Share</Button.Link>,
+          <Button.Link href='https://warpcast.com/based-launch/0xf09fac93'>Share</Button.Link>,
         ],
       });
     }
